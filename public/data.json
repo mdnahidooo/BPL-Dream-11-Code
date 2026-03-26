@@ -4,10 +4,10 @@
     "playerName": "Virat Kohli",
     "playerCountry": "India",
     "playerType": "Batsman",
-    "rating": 92,
+    "rating": 9.2,
     "battingStyle": "Right-hand bat",
     "bowlingStyle": "Right-arm medium",
-    "price": 1600000,
+    "price": 1600,
     "playerImg": "https://i.ibb.co.com/LzN0G76H/images.webp"
   },
   {
@@ -15,10 +15,10 @@
     "playerName": "Babar Azam",
     "playerCountry": "Pakistan",
     "playerType": "Batsman",
-    "rating": 90,
+    "rating": 9.0,
     "battingStyle": "Right-hand bat",
     "bowlingStyle": "Right-arm offbreak",
-    "price": 1450000,
+    "price": 1450,
     "playerImg": "https://i.ibb.co.com/LzN0G76H/images.webp"
   },
   {
@@ -26,10 +26,10 @@
     "playerName": "Ben Stokes",
     "playerCountry": "England",
     "playerType": "All-rounder",
-    "rating": 89,
+    "rating": 9.9,
     "battingStyle": "Left-hand bat",
     "bowlingStyle": "Right-arm fast-medium",
-    "price": 1550000,
+    "price": 1550,
     "playerImg": "https://i.ibb.co.com/LzN0G76H/images.webp"
   },
   {
@@ -39,7 +39,7 @@
     "rating": 9.2,
     "battingStyle": "Right-hand bat",
     "bowlingStyle": "Right-arm offbreak",
-    "price": 1100000,
+    "price": 1100,
     "playerImg": "https://i.ibb.co.com/LzN0G76H/images.webp"
   },
   {
@@ -49,7 +49,7 @@
     "rating": 9.6,
     "battingStyle": "Right-hand bat",
     "bowlingStyle": "Right-arm legbreak",
-    "price": 1300000,
+    "price": 1300,
     "playerImg": "https://i.ibb.co.com/LzN0G76H/images.webp"
   },
   {

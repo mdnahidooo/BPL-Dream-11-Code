@@ -10,13 +10,15 @@ const Players = ({ playersPromise, setCoin, coin }) => {
     // console.log(players);
 
     const [selectedType, setSelectedType] = useState('available');
-    console.log(selectedType);
+    // console.log(selectedType);
+
+    const [selectedPlayers, setSelectedPlayers] = useState([]);
 
     return (
         <div className='w-11/12 mx-auto'>
             <div className='flex flex-col md:flex-row justify-between items-center'>
                 {
-                    selectedType === "available" ? <h2 className='text-2xl font-bold my-8'>Available Players</h2> : <h2 className='text-2xl font-bold my-8'>Selected Players (2/6)</h2>
+                    selectedType === "available" ? <h2 className='text-2xl font-bold my-8'>Available Players</h2> : <h2 className='text-2xl font-bold my-8'>Selected Players ({selectedPlayers.length}/{players.length})</h2>
                 }
 
                 <div>
@@ -31,7 +33,7 @@ const Players = ({ playersPromise, setCoin, coin }) => {
                     <button
                         onClick={() => { setSelectedType("selected") }}
                         className={`btn ${selectedType === "selected" ? "bg-[#E7FE29]" : ""} rounded-l-none rounded-xl`}>
-                        Selected(0)
+                        Selected({selectedPlayers.length})
                     </button>
                 </div>
             </div>
@@ -39,8 +41,20 @@ const Players = ({ playersPromise, setCoin, coin }) => {
 
             {
                 selectedType === 'available'
-                    ? <AvailablePlayers players={players} setCoin={setCoin} coin={coin}></AvailablePlayers>
-                    : <SelectedPlayers></SelectedPlayers>
+                    ? <AvailablePlayers
+                        players={players}
+                        setCoin={setCoin}
+                        coin={coin}
+                        setSelectedPlayers={setSelectedPlayers}
+                        selectedPlayers={selectedPlayers}
+                    >
+                    </AvailablePlayers>
+                    : <SelectedPlayers
+                        selectedPlayers={selectedPlayers}
+                        setSelectedPlayers={setSelectedPlayers}
+                        setCoin={setCoin}
+                        coin={coin}
+                    ></SelectedPlayers>
             }
 
 
